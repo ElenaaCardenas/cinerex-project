@@ -12,6 +12,7 @@ const mongoose_1 = require("@nestjs/mongoose");
 const config_1 = require("@nestjs/config");
 const usuarios_module_1 = require("./usuarios/usuarios.module");
 const auth_module_1 = require("./auth/auth.module");
+const salas_module_1 = require("./salas/salas.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -30,6 +31,7 @@ exports.AppModule = AppModule = __decorate([
             }),
             auth_module_1.AuthModule,
             usuarios_module_1.UsuariosModule,
+            salas_module_1.SalasModule,
         ],
     })
 ], AppModule);
